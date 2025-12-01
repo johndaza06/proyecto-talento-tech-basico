@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición Energética Justa</title>
+
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="css/pc.css">
+
+</head>
+
+<body>
+
+    <nav></nav>
+
+    <!-- PRESENTACIÓN -->
+    <section id="presentacion">
+
+        <div id="titulo">
+            <h1>Transición Energética Justa</h1>
+        </div>
+
+        <div id="informacion">
+
+            <div id="carta1" class="estandar-carta">
+                <h2>Energías Renovables</h2>
+                <p>
+                    Las energías renovables, como la solar, eólica, hidroeléctrica, geotérmica y biomasa, 
+                    se han consolidado como pilares esenciales para diversificar y descarbonizar la matriz 
+                    energética mundial. Su expansión ha avanzado gracias a mejoras tecnológicas, reducción
+                    de costos, mayor eficiencia y políticas que impulsan la sostenibilidad a largo plazo. 
+                    Al provenir de recursos naturales inagotables, estas fuentes permiten disminuir 
+                    significativamente las emisiones contaminantes, mejorar la seguridad energética y fomentar 
+                    sistemas eléctricos más resilientes, accesibles y respetuosos con el medio ambiente.
+                </p>
+            </div>
+
+            <div id="carta2" class="estandar-carta">
+                <h2>Transición Energética Justa</h2>
+                <p>
+                    La transición energética justa busca que el cambio hacia energías limpias ocurra de manera
+                    equilibrada, equitativa y sin afectar negativamente a las comunidades que dependen de modelos
+                    tradicionales. Esto implica garantizar acceso real a tecnologías renovables, generar nuevas 
+                    oportunidades de empleo, acompañar a trabajadores en procesos de reconversión laboral y asegurar
+                    que los beneficios económicos, sociales y ambientales lleguen por igual a todos los territorios.
+                    En el contexto de este proyecto, la visualización de datos históricos facilita comprender la
+                    evolución global de estas fuentes y su papel clave en una transformación energética sostenible 
+                    y socialmente inclusiva.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section id="estadisticas">
+
+        <div id="tabla">
+            <div id="tabulacion">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr id="encabezado"></tr>
+                    </thead>
+                    <tbody id="cuerpo"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="graficos">
+            <div id="grafico-barra" class="estandar-graficos">
+                <canvas id="barra"></canvas>
+            </div>
+
+            <div id="grafico-torta" class="estandar-graficos">
+                <canvas id="torta"></canvas>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CALCULADORA -->
+    <section id="calculadora">
+        <h1>Calculadora de Energía</h1>
+        <input type="number" id="kwh" placeholder="Ingrese consumo en kWh">
+        <button onclick="resultado()">Calcular</button>
+    </section>
+
+    <footer></footer>
+
+</body>
+
+<!-- Librerías externas -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<!-- Scripts locales renombrados -->
+<script src="js/barra.js"></script>
+<script src="js/torta.js"></script>
+<script src="js/calculadora.js"></script>
+<script src="js/tabla.js"></script>
+
+</html>
